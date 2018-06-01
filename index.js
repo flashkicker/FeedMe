@@ -24,6 +24,7 @@ app.use(bodyParser.json())
 
 require("./routes/authRoutes")(app)
 require("./routes/billingRoutes")(app)
+require("./routes/surveyRoutes")(app)
 
 if (process.env.NODE_ENV === "production") {
 	// make sure express serves up production assets like main.js and main.css
