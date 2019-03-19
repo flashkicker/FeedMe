@@ -38,7 +38,7 @@ class Header extends Component {
 						className="left brand-logo"
 						style={{ left: "1.5rem" }}
 					>
-						Emaily
+						FeedMe
 					</Link>
 					<ul className="right">{this.renderContent()}</ul>
 				</div>

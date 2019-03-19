@@ -31,7 +31,12 @@ class SurveyList extends Component {
 	}
 
 	render() {
-		return <div>{this.renderSurveys()}</div>
+		return (
+			<div className="container">
+				<br />
+				{this.renderSurveys()}
+			</div>
+		)
 	}
 }
 
