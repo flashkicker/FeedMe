@@ -34,7 +34,7 @@ class Header extends Component {
 			<nav>
 				<div className="nav-wrapper">
 					<Link
-						to={this.props.auth ? "/surveys" : "/"}
+						to="/"
 						className="left brand-logo"
 						style={{ left: "1.5rem" }}
 					>
@@ -47,8 +47,8 @@ class Header extends Component {
 	}
 }
 
-function mapStateToProps({ auth }) {
-	return { auth }
+function mapStateToProps(state) {
+	return { auth: state.auth }
 }
 
 export default connect(mapStateToProps)(Header)
