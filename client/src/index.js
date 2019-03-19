@@ -20,12 +20,3 @@ ReactDOM.render(
 	</Provider>,
 	document.querySelector("#root")
 )
-
-// responsible for the redux or data related setup
-
-const survey = {
-	title: 'title',
-	subject: 'subject',
-	recipients: 'ujjvalkumaria@gmail.com',
-	body: 'body'
-}

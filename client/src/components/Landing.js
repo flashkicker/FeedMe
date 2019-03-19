@@ -12,8 +12,7 @@ class Landing extends Component {
 						style={{ marginTop: "15px" }}
 						className="waves-effect waves-light btn-large"
 					>
-						Create A New Survey
-						<i className="material-icons left">add</i>
+						Surveys
 					</Link>
 					<div className="fixed-action-btn">
 						<Link to="/surveys/new" className="btn-floating btn-large red">
@@ -30,7 +29,6 @@ class Landing extends Component {
 			<div style={{ textAlign: "center" }}>
 				<h1>FeedMe</h1>
 				Collect feedback from your users faster
-				<br />
 				{this.renderButtons()}
 			</div>
 		)
