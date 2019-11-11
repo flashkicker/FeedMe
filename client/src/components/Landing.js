@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import { connect } from "react-redux"
 import { Link } from "react-router-dom"
+import Icon from "./icon.png"
 
 class Landing extends Component {
 	renderButtons() {
@@ -27,8 +28,9 @@ class Landing extends Component {
 	render() {
 		return (
 			<div style={{ textAlign: "center" }}>
+				<img src={Icon} style={{ marginTop: "50px" }} />
 				<h1>FeedMe</h1>
-				Collect feedback from your users faster
+				Collect feedback from your users faster.
 				{this.renderButtons()}
 			</div>
 		)

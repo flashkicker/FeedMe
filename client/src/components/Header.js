@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import { connect } from "react-redux"
 import { Link } from "react-router-dom"
 import Payments from "./Payments"
+import Icon from "./icon.png"
 
 class Header extends Component {
 	renderContent() {
@@ -22,7 +23,7 @@ class Header extends Component {
 					<li key="2" style={{ margin: "0 10px 0 20px" }}>
 						Credits: {this.props.auth.credits}
 					</li>,
-					<li key="3" style={{ margin: "0 10px 0 0" }} >
+					<li key="3" style={{ margin: "0 10px 0 0" }}>
 						<a href="/api/logout">Logout</a>
 					</li>
 				]
@@ -33,12 +34,18 @@ class Header extends Component {
 		return (
 			<nav>
 				<div className="nav-wrapper">
-					<Link
-						to="/"
-						className="left brand-logo"
-						style={{ left: "1.5rem" }}
-					>
-						FeedMe
+					<Link to="/">
+						<div className="left brand-logo" style={{ left: "1.5rem" }}>
+							<img
+								style={{
+									height: "36px",
+									verticalAlign: "bottom",
+									marginBottom: "15px"
+								}}
+								src={Icon}
+							/>
+							{"    "}FeedMe
+						</div>
 					</Link>
 					<ul className="right">{this.renderContent()}</ul>
 				</div>
